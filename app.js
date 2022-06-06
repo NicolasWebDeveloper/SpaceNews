@@ -37,7 +37,7 @@ app.listen(port, () => {
 });
 
 function apiCall() {
-    const url = "https://api.spaceflightnewsapi.net/v3/articles";
+    const url = "";
     https.get(url, (response) => {
         let data = "";
 
