@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    font-weight: 1em;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to right, #0C3BEB, #0CC9F2);
+}
+
+.container {
+    width: 80%;
+    height: 10rem;
+    margin: 0 auto 0 auto;
+}
+
+.header {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-title > h1 {
+    color: #fff;
+    margin: 0;
+    font-family: "Unbuntu", sans-serif;
+}
+ 
+.fa-globe {
+    color: #fff;
+    margin: 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(to right, #094a72, #064295);
+    border-radius: 0.8rem;
+}
+
+.main {
+    width: 100%;
+}
+
+.main-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.news-container {
+    margin: 1rem;
+    width: 29rem;
+    height: 35rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.1s;
+}
+
+.news-container:hover {
+    transform: scale(1.01);
+}
+
+.news-image {
+    height: 20rem;
+}
+
+.news-image > img {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-title {
+    max-width: 90%;
+    text-align: center;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    font-weight: bolder;
+}
+
+.news-summary {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-footer {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa-arrow-right {
+    margin-left: 1rem;
+}
+
+.btn-readmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, #0C3BEB, #0CC9F2);
+}
+
+.nav {
+    width: 40vw;
+    height: 80vh;
+    position: fixed;
+    left: 30vw;
+    right: 30vw;
+    top: 10vh;
+    bottom: 10vh;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.navbar-animation-forward {
+    animation: navbar-forward 0.2s forwards;
+}
+
+.navbar-animation-reverse {
+    animation: navbar-reverse 0.2s forwards;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.title {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    margin: -4rem 0 2rem 0;
+}
+
+.article-container {
+    display: flex;
+    justify-content: center;
+}
+
+.article-text {
+    width: 100%;
+}
+
+.article-text > h2 {
+    color: white;
+}
+
+.article-image {
+    width: 100%;
+}
+
+.article-image > img {
+    width: 100%;
+}
+
+@keyframes navbar-forward {
+    from {
+        opacity: 0%;
+    }
+    20% {
+        opacity: 20%;
+    }
+    40% {
+        opacity: 40%;
+    }
+    60% {
+        opacity: 60%;
+    }
+    80% {
+        opacity: 80%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes navbar-reverse {
+    from {
+        opacity: 100%;
+    }
+    20% {
+        opacity: 80%;
+    }
+    40% {
+        opacity: 60%;
+    }
+    60% {
+        opacity: 40%;
+    }
+    80% {
+        opacity: 20%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+/**Mobile**/
+@media (max-width: 700px) {
+    .container {
+        width: 98%;
+    }
+
+    .nav {
+        width: 90vw;
+        left: 5vw;
+        right: 5vw;
+    }
+}

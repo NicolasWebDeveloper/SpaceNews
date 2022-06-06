@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space News | <%= data.title %></title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <nav class="nav hidden">
+
+    </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <div class="header-title">
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <h1 class="title">Space News</h1>
+                </div>
+                <div class="header-right">
+                    <a href="" class="btn nav-button">Menu</a>
+                </div>
+            </div>
+        </div>
+    </header>  
+    <main class="main">
+        <div class="container">
+            <div class="main-container">
+                <h1 class="title"><%= data.title %></h1>
+                <div class="article-container">
+
+                    <div class="article-image">
+                        <img src="<%= data.imageUrl %>" alt="">
+                    </div>
+                </div>
+                <div class="article-text">
+                    <h2>Short Summary:  <br /> <br /> <%= data.summary %></h2>
+                </div>
+                <a href="<%= data.url %>" class="btn-readmore">Original Article</a>
+            </div>
+        </div>
+    </main>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
